@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  json-server:
+    build: ./
+    container_name: "json-server"
+    stdin_open: true
+    tty: true
+    environment:
+      - file=test.json
+      - port=4000
+      - delay=500
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./:/server

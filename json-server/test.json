@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "name": "Tan A Minh",
+      "age": 35
+    },
+    {
+      "name": "Tin Bao",
+      "age": 40
+    },
+    {
+      "name": "Mo",
+      "age": 20
+    }
+  ],
+  "books": [
+    {
+      "title": "Gone with the wind",
+      "published": 1950
+    },
+    {
+      "title": "Starcraft",
+      "published": 1998
+    }
+  ]
+}
