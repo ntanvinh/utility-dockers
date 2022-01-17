@@ -1,0 +1,15 @@
+{
+  "name": "websockify-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "websockifyServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@maximegris/node-websockify": "^1.0.7"
+  }
+}
