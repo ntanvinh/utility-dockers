@@ -1,6 +1,8 @@
 CURRENT_DIR=$PWD
 PORT=4000 # default port
 DELAY=0 # default dealy in ms
+#JSON_SERVER_IMAGE=cjson-srv
+JSON_SERVER_IMAGE=ntanvinh/customizable-json-server
 
 function help {
     echo "USAGE:"
@@ -45,4 +47,5 @@ FILENAME=$1
 # run the server
 echo "JSON server running at localhost:$PORT with file $FILENAME and delay $DELAY ms"
 
-docker run -it --init -p $PORT:$PORT -v "$CURRENT_DIR:/server" -e db=$FILENAME -e port=$PORT -e delay=$DELAY --name json-server --rm  ntanvinh/customizable-json-server
+docker run -it --init -p $PORT:$PORT -v "$CURRENT_DIR:/server" -v "/server/node_modules" -e db=$FILENAME -e port=$PORT -e delay=$DELAY --name json-server --rm  $JSON_SERVER_IMAGE
+
